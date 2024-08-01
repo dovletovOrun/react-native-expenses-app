@@ -1,6 +1,5 @@
-export const formatDate = (date) => {
-    
-    return `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+export const  formatDate = (date) => {
+    return date.toISOString().slice(0, 10);
   };
   
  export const getDateMinusDays = (date, days) => {
